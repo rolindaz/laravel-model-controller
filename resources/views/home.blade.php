@@ -7,15 +7,9 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 <body>
-    <h1>
+    <h1 class="text-center py-4">
         Laravel & Eloquent - Movies
     </h1>
-    <ul>
-        @foreach ($movies as $movie)
-            <li>
-                {{ $movie['title'] }}
-            </li>
-        @endforeach
-    </ul>
+    <x-movie-list></x-movie-list>
 </body>
 </html>
